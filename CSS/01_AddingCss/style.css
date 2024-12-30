@@ -1,0 +1,13 @@
+body{
+    background-color: #3d3d3d;
+}
+h1{
+    color: rgb(84, 84, 228);
+    padding: 5px;
+    font-size: x-large;
+}
+p{
+    padding: 5px;
+    color: orange;
+    font-size: 12px;
+}
