@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and User Input</title>
+</head>
+<body>
+    <!-- First Login form -->
+    <h4>The First Login page...</h4>
+    <form >
+        <label for="uname">
+            UserName: <input placeholder="Enter UserName" type="text" name="uname">
+        </label>
+        <label for="uPassword">
+            Password : <input placeholder="Enter password" type="password" name="uPassword">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Line braking Tag 'br' -->
+    <br></br>
+    <!-- Second Login form -->
+     <h4>The Second Login page...</h4>
+     <form >
+        <label for="userName2">
+            Email : 
+            <input type="email" name="userName2" >          <!-- Contains Restriction to use '@' in input -->
+        </label>
+        <label for="password2">
+            Password : 
+            <input type="text" name="password2">
+        </label>
+        <button type="reset">Reset</button>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Some Additional User Input Type Element -->
+     <form >
+        <!-- checkbox Element -->
+         <h2>The checkbox Element are Given Below : </h2>
+        <label for="checkboxItem">
+            Games:
+            <input type="checkbox" name="checkboxItem" value="Cricket">
+            Cricket
+            <input type="checkbox" name="checkboxItem" value="Football">
+            FootBall
+            <input type="radio" name="checkboxItem" value="Football">
+            VolleyBall 
+        </label>
+
+    <h2>Here is the Esport Section Given : </h2>
+        <label for="selectItem">
+            Esport Game:
+            <select name="selectItem" id="">
+                <option value="Bgmi">Bgmi</option>
+                <option value="FreeFireMax">Freefire</option>
+                <option value="Pubg Global">PUBG</option>
+            </select>
+        </label>
+     </form>
+</body>
+</html>
