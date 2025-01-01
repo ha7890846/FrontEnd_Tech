@@ -1,0 +1,35 @@
+body{
+    background-color: #ffffff;
+    color: #070707;
+    
+}
+.sidevar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color:#3973ac;
+    overflow-x: hidden;    
+}
+.sidevar a{
+    color: black;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+.sidevar a:hover{
+    color: #f1f1f1;
+}
+.main{
+    margin-left: 160px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidevar {padding-top: 15px;}
+    .sidevar a {font-size: 18px;}
+  }
+  
