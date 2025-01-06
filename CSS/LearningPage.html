@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage for Learning</title>
+    <link rel="stylesheet" href="./LearningPage.css" />
+  </head>
+  <body>
+    <div class="sidevar">
+      <a href="#colors">Colors</a>
+      <a href="#bgc">BackGrounds</a>
+      <a href="border">Border</a>
+      <a href="margine">Margine</a>
+    </div>
+
+    <div class="main">
+      <div id="colors">
+        <h1
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+          "
+        >
+          Color Uses and Properties:
+        </h1>
+        <h2>Use by Color Name:</h2>
+        <p style="margin-bottom: 5px">
+          Colors are specified using predefined color names, or RGB, HEX, HSL,
+          RGBA, HSLA values.
+          <br />Here Some Color's name Given below -
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: Tomato;
+            text-align: center;
+          "
+        >
+          Tomato
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: DodgerBlue;
+            text-align: center;
+          "
+        >
+          DodgerBlue
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: MediumSeaGreen;
+            text-align: center;
+          "
+        >
+          MediumSeaGreen
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: Gray;
+            text-align: center;
+          "
+        >
+          Gray
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: SlateBlue;
+            text-align: center;
+          "
+        >
+          SlateBlue
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: Violet;
+            text-align: center;
+          "
+        >
+          Violet
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: LightGray;
+            text-align: center;
+          "
+        >
+          LightGray
+        </p>
+        <h4 style="margin: 0">Syntax:</h4>
+        <div>
+          <pre
+            style="
+              display: inline-block;
+              border: 1px solid #ccc;
+              padding: 2px;
+              margin: 0;
+              background-color: #f9f9f9;
+            "
+          >
+                <code>
+Selector{
+    color: color_name; 
+    background-color: color_name;
+}
+                </code>
+            </pre>
+        </div>
+        
+        
+        <div class="rgb">
+          <h2>CSS RGB Colors</h2>
+          <p>An RGB color value represents RED, GREEN, and BLUE light sources.</p>
+          <h4>RGB color Tips:</h4>
+          <ul>
+            <li>
+              In CSS, a color can be specified as an RGB value, using this Syntax:
+            <strong> rgb(red value, green value, blue value)</strong>
+          </li>
+          <li>
+            Each parameter (red, green, and blue) defines the intensity of the
+            color between <strong> <i>0 and 255</i></strong>
+          </li>
+          <li>
+            For example,<strong>rgb(255, 0, 0)</strong> is displayed as
+            <strong>red</strong>, because red is set to its highest value (255)
+            and the others are set to 0.
+          </li>
+          <li>
+            To display <strong>black</strong>, set all color parameters to 0,
+            like this: rgb(0, 0, 0).
+          </li>
+          <li>
+            To display <strong> white</strong>, set all color parameters to 255,
+            like this: rgb(255, 255, 255).
+          </li>
+        </ul>
+        <h4>Experiment by mixing the RGB values below:</h4>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(255, 0, 0);
+            text-align: center;
+          "
+        >
+          TomatoRed
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(0, 0, 255);
+            text-align: center;
+          "
+        >
+          Blue
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(60, 179, 113);
+            text-align: center;
+          "
+        >
+          MediumSeaGreen
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(120, 120, 120);
+            text-align: center;
+          "
+        >
+          Gray
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(255, 165, 0);
+            text-align: center;
+          "
+        >
+          Yellow
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(238, 130, 238);
+            text-align: center;
+          "
+        >
+          Violet
+        </p>
+        <p
+          style="
+            margin: 2px 0px 5px 0px;
+            background-color: rgb(180, 180, 180);
+            text-align: center;
+          "
+        >
+          LightGray
+        </p>
+        <h4>RGBA Value</h4>
+        <p>
+          RGBA color values are an extension of RGB color values with an alpha
+          channel - which specifies the opacity for a color.
+        </p>
+        <ul>
+          <li>
+            An RGBA color value is specified with:
+            <strong>rgba(red, green, blue, alpha)</strong>
+          </li>
+          <li>
+            The alpha parameter is a number between 0.0 (fully transparent) and
+            1.0 (not transparent at all)
+          </li>
+        </ul>
+      </div>
+      <div class="hexcolor">
+        <h4>CSS HEX Colors </h4>
+        <p>
+          A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+        </p>
+        <ul>
+          <li>
+            a color can be specified using a hexadecimal value in the form: <strong>#rrggbb</strong>
+          </li>
+          <li>
+            Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+          </li>
+          <li>
+            For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+          </li>
+          <li>
+            To display black, set all values to 00, like this: #000000.
+          </li>
+          <li>
+            To display white, set all values to ff, like this: #ffffff.  
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+      <div id="bgc">
+        <div class="bgc-intro">
+          <h1
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+          "
+        >
+          BackGrounds Properties
+        </h1>
+        <p>
+          The CSS background properties are used to add background effects for elements.
+          <br>
+          the following CSS background properties:
+          <ul>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-repeat</li>
+            <li>background-attachment</li>
+            <li>background-position</li>
+          </ul>
+        </p>
+        </div>
+        <div class="bgc-color">
+          <h2>CSS background-color</h2>
+          <p>The background-color property specifies the <strong> background color</strong> of an element.</p>
+          <h4>
+            Syntax:
+          </h4>
+          <pre
+            style="
+              display: inline-block;
+              border: 1px solid #ccc;
+              padding: 2px;
+              margin: 0;
+              background-color: #f9f9f9;
+            "
+          >
+                <code>
+Selector{
+    background-color: color_name;
+    background-image: "./path";
+}
+                </code>
+            </pre>
+            <h6 style="margin: 0;">Tips:</h6>
+            <ul style="margin-top: auto;">
+              <li>You can set the background color for any HTML elements.</li>
+            </ul>
+            <h2 style="text-align: center;padding: 2px;">Opacity / Transparency</h2>
+            <p>
+              The opacity property specifies the opacity/transparency of an element. It can take a value from <b>0.0 - 1.0.</b>  The lower value, the more transparent:
+            </p>
+            <h4>
+              Syntax:
+            </h4>
+            <pre
+              style="
+                display: inline-block;
+                border: 1px solid #ccc;
+                padding: 2px;
+                margin: 0;
+                background-color: #f9f9f9;
+              "
+            >
+                  <code>
+  Selector{
+      background-color: color_name;
+      opacity:0.6;
+  }
+                  </code>
+              </pre>
+              <h5 style="margin: 0;">Note:</h5>
+              <p style="border:1px dashed saddlebrown;">
+                <span style="margin-left: 10px;margin-top: 0;"><b>1. </b>When using the opacity property to add transparency to the background of an element,</span> 
+                 all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+                <p style="border:1px dashed saddlebrown;"><b>2. </b>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:</p>
+                <p>100% opacity
+
+                  60% opacity
+                  
+                  30% opacity
+                  
+                  10% opacity
+                  <span>
+                    Example
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+                  </span>
+                </p>
+        </div>
+
+
+
+        <div class="bgc-img"></div>
+      </div>
+
+
+
+
+      <div id="border"></div>
+      <div id="margine"></div>
+    </div>
+  </body>
+</html>

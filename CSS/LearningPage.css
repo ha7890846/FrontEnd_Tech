@@ -1,0 +1,48 @@
+body{
+    background-color: #bfbcbc8a;
+    color: #070707;
+    
+}
+h4,h2{
+    text-decoration: underline;
+    background-color: rgba(225, 223, 223, 0.762);
+}
+.sidevar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color:#3973ac;
+    overflow-x: hidden;    
+}
+.sidevar a {
+    color: black;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    background-color: transparent; /* Initial background color */
+    border-left: 3px solid transparent; /* Initial border */
+}
+
+.sidevar a:hover {
+    color: #f1f1f1; /* Text color change */
+    background-color: #2c3e50; /* Darker background on hover */
+    border-left: 3px solid #f1f1f1; /* Add a left border on hover */
+    transform: translateX(10px); /* Move the link slightly to the right */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    font-weight: bold; /* Make the text bold */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+.main{
+    margin-left: 160px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidevar {padding-top: 15px;}
+    .sidevar a {font-size: 18px;}
+  }
