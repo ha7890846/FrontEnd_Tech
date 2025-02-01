@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #938d8d52;
+}
+.first{
+  border: 2px solid black;
+  padding: 20px;
+}
+.first h1{
+  color: red;
+  text-decoration: underline;
+}
+pre{
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+  color: rgb(211, 10, 10);
+  background-color: #f4f4f470;
+  padding: 10px;
+  border: 1px solid #030101;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  resize: horizontal;
+}
+span{
+  color: #da1039;
+  padding: 3px;
+  background-color:#522d2d27;
+}
