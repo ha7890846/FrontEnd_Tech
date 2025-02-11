@@ -1,7 +1,51 @@
-*{
+body{
     margin: 20px;
     text-align: center;
-    background-color: #3d3d3d;
+    background-color: #b86a6a;
+    color: #ffffff;
+}
+
+h1{
+    color: #000000d4;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+b{
+    color: rgb(213, 206, 18);
+    font-weight: bold;
+}
+code{
+    color: rgba(204, 255, 0, 0.811);
+    font-size: large;
+    font-weight: bold;
+}
+.reducer{
+    background-color: #a94f63;
+    box-sizing: border-box;
     color: #e1e2aad4;
-    font-size: x-large;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.reducer:hover{
+    background-color: #a94f63;
+    color: #e1e2aad4;
+    box-shadow: #271c1c 10px 10px 10px;
+}
+.reducer button{
+    background-color: rebeccapurple;
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: xx-large;
+}
+.reducer button:hover{
+    background-color: rgba(102, 51, 153, 0.8);
+    box-shadow: #271c1c 2px 2px 2px;
+    color: #e1e2aad4;
+}
+.reducer h1,label, .output{
+    font-size: xx-large;
+    margin: 5px;
 }
